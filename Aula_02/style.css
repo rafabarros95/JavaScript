@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(183, 183, 197);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: yellow;
+ }
+
+ p {
+   color: rgb(23, 23, 160); /* Komentare in CSS */
+ }

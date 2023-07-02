@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event with DOM</title>
+    <style>
+        div#area{  /* declarando div by id "area" */
+            background: rgb(94, 214, 94);
+            color: rgb(36, 40, 44);
+            font: 20px arial;
+            width: 200px;
+            height: 200px;
+            text-align: center; /* alinhando no centro*/
+            line-height: 200px; /* no meio */
+
+            
+        }
+    </style>
+</head>
+<body>
+   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <!--instead of this, we can use adEventlistener-->
+    Interaja...
+   </div> 
+
+   <script>
+    var a = window.document.getElementById("area")
+    //addEventListener("click", clicar)
+    //addEventListener("mouseenter", entrar)
+    //addEventListener("mouseout", sair)
+
+    function clicar() {
+       // var a = window.document.getElementById("area")
+        a.innerText = "Clicou no botao"
+        a.style.background = "red"
+    }
+    function entrar(){
+        a.innerText = "entrou"
+    }
+    function sair(){
+        a.innerText = "saiu"
+        a.style.background = "green"
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* CSS */
+     body{
+        background-color: rgb(190, 198, 209);
+        color: rgb(248, 232, 6);
+        font: normal 14pt Metallica;
+     }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com DOM</h1> <!--DOM - Document Objetct Model-->
+    <p>Primeiro paragrafo</p>
+    <p>Este e um paragrafo exemplificando o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Click here</div>
+
+    <script>
+        //Beispiele
+        window.document.write(window.document.charset) 
+        
+        //window.document.write(window.document.URL)
+        //var id = window.document.getElementById = "msg"
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1] //entre colchetes exemplifica qual paragrafo sera mostrado, a iniciar por 0;
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        p1.style.color = "black"
+        corpo.style.color = "blue"
+        //window.alert(msg.innerText)
+       // window.document.write(msg.innerText)
+        //msg.style.color = "green"
+        var id = window.document.querySelector("div#msg") // "#" para div e "." para class
+        msg.style.color = "red"
+
+
+    </script>
+</body>
+</html>
