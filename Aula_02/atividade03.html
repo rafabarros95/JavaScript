@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,22 +17,23 @@
      var Erg = n1*n2; // Erg = Ergebnisse
      window.alert('n1 mal n2 ist: ' + Erg );*/
 
-     var n1 = Number.parseInt(window.prompt('Sag mir eine Nummer:')); //convert string to number (int);
+     var n1 = Number.parseInt(window.prompt('Sag mir eine Nummer:'));
      var n2 = Number.parseInt(window.prompt('Sag mir noch eine andere Nummer:'));
      /* or Number.parseFloat(...) convert string to float */
      var Erg = n1 + n2;
-     window.alert('n1 plus n2 ist: ' + Erg );
+     /* window.alert('n1 plus n2 ist: ' + Erg ); */
+     window.alert(`A soma entre ${n1} e ${n2} e igual a ${Erg}`); /* ${x} - ECMAScript aktuell */
      
    
-// hier müssen wir String zu Nummer wecheln wie folgende:
-// var n1 = Number.parseInt(window.prompt....)
-// oder nur Number(window.prompt....)
+   /*  hier müssen wir String zu Nummer wecheln wie folgende:
+    var n1 = Number.parseInt(window.prompt....)
+   oder nur Number(window.prompt....)
 
-/*
-Number to String?
-String(n) oder
-n.toString()
-*/
+   
+   Number to String?
+   String(n) oder
+   n.toString()
+    */
    </script>
 </body>
 </html>
