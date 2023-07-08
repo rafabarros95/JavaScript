@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+:root{
+    --font1: 'Chakra Petch', sans-serif;
+    --font2: 'Sriracha', cursive;
+    --font3:  'Domine', serif;
+}
+
+ /* *{
+    padding: 0px;
+    margin: 0px;
+}  */
+
+body {
+    background-color: rgb(9, 178, 235);
+}
+
+header {
+    font-style:italic;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    text-decoration: underline;
+    font-family: var(--font1);
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: var(--font3);
+      
+}
+
+section > div > input#number {
+    width: 30px;
+    border-radius: 20px;
+    height: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+section > div > input#button {
+    width: 30px;
+    border-radius: 0px 5px 0px 5px;
+    height: 30px;
+    color: black;
+    font-family: var(--font2);
+    font-size: 14px;
+
+    
+    
+}
+
+section > div > input#button:hover {
+   background-color: lightblue;
+   color: white;
+   
+}
+
+footer > p {
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 50px;
+
+}
+
